@@ -1,0 +1,263 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #471516;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 12px;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 50rem;
+}
+
+.instagram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+    background: #471516;
+
+
+}
+
+.card:nth-child(1) {
+    min-height: 20rem;
+    margin-bottom: 14px;
+    border-radius: 40px 40px 0 0 ;
+	box-shadow:  20px 20px 16px #3c1213,
+             -20px -20px 16px #521819;
+}
+
+.card:nth-child(2) {
+    border-radius: 0 0 40px 40px;
+	box-shadow:  20px 20px 60px #3c1213,
+             -20px -20px 20px #521819;
+}
+.img_logo {
+	padding: 8px;
+    height: 3rem;
+    background: #eee;
+    border-radius: 5px; 
+}
+
+.img_usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img_usuario img {
+    height: 6rem;
+}
+
+.link_login {
+    background-color: #eee;
+    color: #471516;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+.link_login:hover {
+    background-color: #360d0e;
+    color: #eee;
+    
+}
+
+.link_logout {
+    color: #eee;
+    margin-top: 1rem;
+    background: #360d0e;
+    border-radius: 8px;
+    padding: 4px 8px;
+    box-shadow:  20px 20px 10px #3c1213,
+             20px 20px 10px #521819;
+}
+
+.not_account {
+    color: rgb(160, 160, 160);
+}
+
+.not_account:nth-child(1) {
+    margin: 8px 0;
+}
+
+.link_in {
+    color: #eee;
+}
+
+.get_the_app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get_app {
+	color: #eee;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.app_download {
+    color: #eee;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 3px 16px;
+    margin: 0 2px;
+    background: #360d0e;
+    border-radius: 8px;
+    box-shadow:  20px 20px 10px #3c1213,
+             20px 20px 10px #521819;
+}
+
+/* 
+.app_download:nth-child(2) {
+    background-image: url('../img/googleplay-button.png');
+}
+*/
+
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .section_wrap {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #e0dcdc;
+    }
+
+    .section_wrap {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    .download {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+	}
+    .app_download {
+    display: flex;
+    font-size: 14px;
+    margin: 5px 0;
+    color: #333;
+    align-items: center;
+    justify-content: center;
+    background: #e0dcdc;
+    box-shadow:  20px 20px 10px #bebbbb,
+             -2px -2px 1px #fffdfd;
+	}
+
+	.app_download img{
+    width: 25px;
+    height: 25px;
+	}
+
+	.get_app {
+	color: #333;
+	}
+
+	.card {
+    background: #e0dcdc;
+	}
+
+.card:nth-child(1) {
+	box-shadow:  20px 20px 33px #bebbbb,
+             -20px -20px 33px #fffdfd;
+	}
+
+.card:nth-child(2) {
+box-shadow:  20px 20px 60px #bebbbb,
+             -2px -2px 2px #fffdfd;
+	}
+
+.not_account {
+    color: rgb(160, 160, 160);
+}
+
+.link_in {
+    color: #333;
+	}
+
+.link_logout {
+    background-color: #eee;
+    color: #333;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+.img_logo {
+	padding: 8px;
+    height: 4rem;
+    background: transparent;
+}
+
+
+}
